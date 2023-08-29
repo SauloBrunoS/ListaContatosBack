@@ -17,7 +17,7 @@ public class Contato {
     private String nomeContato;
 
     @NotNull(message = "O telefone não pode ser nulo")
-    private Integer telefone;
+    private String telefone;
     private String endereco;
     private boolean status;
 
@@ -30,7 +30,7 @@ public class Contato {
     public String getEndereco() {
         return endereco;
     }
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
     public boolean isStatus() {
@@ -45,7 +45,7 @@ public class Contato {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
     public void setStatus(boolean status) {
